@@ -1,6 +1,10 @@
 #include <windows.h>
 #include <stdio.h>
 
+/*
+	Author: Josh Magri @passthehashbrwn
+*/
+
 LONG WINAPI dummyExceptionHandler(PEXCEPTION_POINTERS ExceptionInfo);
 BOOL GetNtdllSectionVa(char* sectionName, PVOID* sectionVa, DWORD* sectionSize);
 PVOID findLdrpVectorHandlerList();
