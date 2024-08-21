@@ -2,6 +2,10 @@
 #include <winternl.h>
 #include <stdio.h>
 
+/*
+	Author: Josh Magri @passthehashbrwn
+*/
+
 void InjectVEHEntry();
 LONG WINAPI benignExceptionHandler(PEXCEPTION_POINTERS ExceptionInfo);
 LONG WINAPI maliciousExceptionHandler(PEXCEPTION_POINTERS ExceptionInfo);
